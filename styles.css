@@ -1,0 +1,123 @@
+/* Global Thingies */
+:root {
+  --orange: #ffc787;
+  --pink: #e0a6f4;
+  --grey: #292929;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+  background: #000;
+}
+
+/*------------------- HEADER -------------------*/
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+/* Makes the gradient border in the nav bar */
+.nav {
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+  font-size: small;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#1c1c1c) padding-box,
+    linear-gradient(to right, var(--pink), var(--orange)) border-box;
+}
+
+/* Show the selected nav item in grey */
+.nav-item-active {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background: var(--grey);
+}
+
+/* Gives the gradient to the EN button*/
+.lang {
+  background-image: linear-gradient(var(--pink), var(--orange));
+  color: transparent;
+  background-clip: text;
+}
+
+/* ------------------- HERO ------------------- */
+.hero-title {
+  font-family: "Vollkorn", serif;
+  font-size: 6rem;
+  line-height: 80px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+}
+
+hr.solid {
+  border-top: 1px solid #bbb;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.line-sec {
+  font-weight: 200;
+  gap: 80px;
+}
+
+/* ------------------- Serviços ------------------- */
+.card {
+  border-radius: 35px !important;
+  width: 400px !important;
+  height: 200px !important;
+  overflow: hidden; /* make sure nothing bleeds */
+  position: relative; /* for the absolute children */
+}
+
+/* 2) Inner padding container */
+.card-body {
+  position: relative; /* so titles & text can abs-pos */
+  height: 100%;
+  padding: 1.5rem; /* adjust to taste */
+}
+
+.card-title {
+  display: inline-block;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  width: 45%;
+}
+
+/* 4. Body text styling */
+.card-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+  color: black;
+
+  position: absolute;
+  top: 60%;
+  right: 1.5rem; /* match .card-body padding */
+  transform: translateY(-50%);
+  width: 45%; /* keeps your text column narrow */
+  margin: 0;
+}
+
+/* ------------------- Projetos ------------------- */
