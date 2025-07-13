@@ -16,13 +16,53 @@ body {
   background: #000;
 }
 
+.homepage {
+  background: url("../images/Star 1.png") no-repeat top 5% right 20% / 1.5vw
+      1.5vw,
+    url("../images/Vector 6.png") no-repeat top 9% right 97% / 20vw auto,
+    url("../images/Ellipse 4.png") no-repeat top -4% left 90% / 60vw auto,
+    url("../images/Ellipse 3.png") no-repeat top 28% right 110% / 50vw auto,
+    url("../images/Ellipse 2.png") no-repeat top 70% right 100% / 50vw auto,
+    url("../images/Ellipse 3.png") no-repeat top 60% right 0% / 50vw auto,
+    url("../images/Ellipse 3.png") no-repeat top 90% right 60% / 50vw auto,
+    url("../images/Vector 8.png") no-repeat top 28% right 11% / 10vw auto,
+    url("../images/Vector 5.png") no-repeat top 48% right 95% / 11vw auto,
+    url("../images/Vector 2.png") no-repeat top 60% right 5% / 25vw auto,
+    url("../images/Ellipse 1.png") no-repeat top 7% right 90% / 40vw auto;
+}
+
+.sobrepage {
+  background: url("../images/Star 1.png") no-repeat top 5% right 20% / 2vw,
+    url("../images/Vector 6.png") no-repeat top 12% right 97% / 20vw auto,
+    url("../images/Ellipse 4.png") no-repeat top -4% left 90% / 60vw auto,
+    url("../images/Ellipse 3.png") no-repeat top 37% right 110% / 50vw auto,
+    url("../images/Ellipse 2.png") no-repeat top 70% right 100% / 50vw auto,
+    url("../images/Ellipse 3.png") no-repeat top 60% right 0% / 50vw auto,
+    url("../images/Vector 3.png") no-repeat top 32% right 2% / 15vw auto,
+    url("../images/Vector 1.png") no-repeat top 60% right 2% / 20vw auto,
+    url("../images/Ellipse 1.png") no-repeat top 15% right 95% / 40vw auto;
+}
+
+.contactpage {
+  background: url("../images/Vector 6.png") no-repeat top 40% right 95% / 20vw
+      auto,
+    url("../images/Ellipse 4.png") no-repeat top 5% left 90% / 60vw auto,
+    url("../images/Ellipse 1.png") no-repeat top 70% right 100% / 50vw auto;
+}
+
+.projectspage {
+  background: url("../images/Vector 6.png") no-repeat top 30% right 96% / 20vw
+      auto,
+    url("../images/Ellipse 4.png") no-repeat top -10% left 90% / 60vw auto;
+}
+
 /*------------------- HEADER -------------------*/
-.header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 10;
+header {
+  background-color: black;
+}
+
+header .menu-toggle {
+  display: none;
 }
 
 .nav {
@@ -52,6 +92,12 @@ body {
   background-clip: text;
 }
 
+.separators {
+  display: block;
+  max-width: 90vw;
+  margin: 20px auto !important;
+}
+
 /* ------------------- HERO ------------------- */
 .hero-title {
   font-family: "Vollkorn", serif;
@@ -61,15 +107,15 @@ body {
   z-index: 2;
 }
 
-.star {
-  width: 20px;
-  height: 20px;
-}
-
 hr.solid {
   border-top: 1px solid #bbb;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.star {
+  width: 2vw;
+  height: 2vw;
 }
 
 .line-sec {
@@ -77,7 +123,27 @@ hr.solid {
   gap: 80px;
 }
 
+.hero {
+  display: flex;
+  flex-direction: row;
+}
+
 /* ------------------- Serviços ------------------- */
+.service-wrapper {
+  position: relative;
+  overflow: visible;
+  min-height: 50vh;
+}
+
+.service-cards,
+.projects,
+.contact,
+.testimonials-bubbles {
+  margin-right: 3rem;
+  margin-left: 3rem;
+  padding: 3rem;
+}
+
 .card {
   border-radius: 35px !important;
   width: 400px !important;
@@ -109,7 +175,7 @@ hr.solid {
 
   position: absolute;
   top: 60%;
-  right: 1.5rem;
+  right: 1rem;
   transform: translateY(-50%);
   width: 45%;
   margin: 0;
@@ -172,6 +238,8 @@ hr.solid {
 /* ------------------- Testimonials ------------------- */
 .testimonials {
   margin: 0px 150px;
+  margin-right: 3rem;
+  margin-top: 3rem;
 }
 
 .testimonial-card {
@@ -249,7 +317,7 @@ hr.solid {
 }
 
 .image-contact {
-  max-width: 500px;
+  max-width: 90vw;
   max-height: 100px;
   pointer-events: none;
 }
@@ -290,6 +358,7 @@ hr.solid {
   font-weight: 300;
   display: inline-block;
   text-align: center;
+  min-width: 225px;
 }
 
 .custom-btn:hover {
@@ -365,7 +434,6 @@ hr.solid {
   gap: 2rem;
   justify-content: center;
   padding: 2rem;
-  background: black;
 }
 
 .avatar {
@@ -436,4 +504,211 @@ hr.solid {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+/* ──────────────────────────────────────────── */
+/*          Large desktops (<1200px)            */
+/* ──────────────────────────────────────────── */
+@media (min-width: 2300px) {
+  body {
+    background: url("../images/Star 1.png") no-repeat top 5% right 15% / 2vw 2vw,
+      url("../images/Vector 6.png") no-repeat top 8% right 95% / 10vw auto,
+      url("../images/Ellipse 4.png") no-repeat top -8% left 85% / 55vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 10% right 85% / 35vw auto;
+  }
+}
+
+/* ──────────────────────────────────────────── */
+/*             Desktops (<992px)                */
+/* ──────────────────────────────────────────── */
+@media (max-width: 992px) {
+  .homepage {
+    background: url("../images/Vector 6.png") no-repeat top 11% right 93% / 25vw
+        auto,
+      url("../images/Ellipse 4.png") no-repeat top 0% left 80% / 70vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 12% right 88% / 55vw auto;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectspage {
+    background: url("../images/Ellipse 4.png") no-repeat top -10% left 90% / 60vw
+      auto;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contactpage {
+    background: url("../images/Vector 6.png") no-repeat top 43% right 90% / 20vw
+        auto,
+      url("../images/Ellipse 4.png") no-repeat top 5% left 90% / 60vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 70% right 100% / 50vw auto;
+  }
+
+  .sobrepage {
+    background: url("../images/Vector 6.png") no-repeat top 16% right 97% / 20vw
+        auto,
+      url("../images/Ellipse 4.png") no-repeat top 0% left 90% / 60vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 37% right 110% / 50vw auto,
+      url("../images/Ellipse 2.png") no-repeat top 70% right 100% / 50vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 60% right 0% / 50vw auto,
+      url("../images/Vector 3.png") no-repeat top 37% right 3% / 15vw auto,
+      url("../images/Vector 1.png") no-repeat top 62% right 7% / 20vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 15% right 95% / 40vw auto;
+  }
+}
+
+/* ──────────────────────────────────────────── */
+/*         Tablets (sm: <880px)                 */
+/* ──────────────────────────────────────────── */
+@media (max-width: 880px) {
+  .homepage {
+    background: url("../images/Vector 6.png") no-repeat top 13% right 90% / 30vw
+        auto,
+      url("../images/Ellipse 4.png") no-repeat top 1% left 99% / 80vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 12% right 99% / 65vw auto !important;
+  }
+
+  .contactpage {
+    background: url("../images/Ellipse 4.png") no-repeat top 5% left 90% / 60vw
+        auto,
+      url("../images/Ellipse 1.png") no-repeat top 70% right 100% / 50vw auto;
+  }
+
+  .sobrepage {
+    background: url("../images/Ellipse 4.png") no-repeat top 0% left 90% / 60vw
+        auto,
+      url("../images/Ellipse 3.png") no-repeat top 37% right 110% / 50vw auto,
+      url("../images/Ellipse 2.png") no-repeat top 70% right 100% / 50vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 60% right 0% / 50vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 15% right 95% / 40vw auto;
+  }
+}
+
+/* ──────────────────────────────────────────── */
+/*            Phones (<768px)                   */
+/* ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .homepage {
+    background: url("../images/Ellipse 4.png") no-repeat top 2% left 20% / 120vw
+        auto,
+      url("../images/Ellipse 1.png") no-repeat top 11% left -20% / 85vw auto !important;
+  }
+
+  .contactpage {
+    background: url("../images/Ellipse 4.png") no-repeat top 5% left 90% / 80vw
+      auto;
+  }
+
+  .projectspage {
+    background: url("../images/Ellipse 4.png") no-repeat top 10% left 90% / 80vw
+      auto;
+  }
+
+  .sobrepage {
+    background: url("../images/Ellipse 4.png") no-repeat top 2% left 90% / 70vw
+        auto,
+      url("../images/Ellipse 3.png") no-repeat top 37% right 110% / 50vw auto,
+      url("../images/Ellipse 2.png") no-repeat top 70% right 100% / 50vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 60% right 0% / 50vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 15% right 95% / 40vw auto;
+  }
+
+  .service-cards {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 2rem;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 0px;
+  }
+
+  .hero-text {
+    width: 250px !important;
+    margin-left: auto !important;
+  }
+
+  .hero {
+    align-items: flex-start !important;
+    margin: 0px !important;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  header .nav,
+  header .lang,
+  .star,
+  .project-card-image {
+    display: none;
+  }
+
+  .services {
+    display: none;
+  }
+
+  header .menu-toggle {
+    display: block;
+    position: static;
+    margin-left: auto;
+    flex-shrink: 0;
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+
+    background-image: linear-gradient(#1c1c1c, #1c1c1c),
+      linear-gradient(to right, var(--pink), var(--orange));
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+
+    border: 1px solid transparent;
+
+    color: var(--pink);
+    cursor: pointer;
+  }
+
+  header.open .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50vw;
+    background-color: #000;
+    text-align: center;
+  }
+  header.open .nav .nav-link {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .testimonials {
+    margin: 0px !important;
+  }
+
+  .testimonials-bubbles,
+  .projects {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0;
+  }
 }

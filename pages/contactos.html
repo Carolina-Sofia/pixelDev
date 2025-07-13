@@ -33,10 +33,12 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+
+    <script src="../script.js" defer></script>
   </head>
-  <body class="bg-black text-white position-relative">
+  <body class="bg-black text-white position-relative contactpage">
     <!-- Header -->
-    <header class="py-4" style="font-family: 'Manrope', serif">
+    <header class="py-4 sticky-top" style="font-family: 'Manrope', serif">
       <div class="container d-flex align-items-center justify-content-between">
         <a href="/" class="text-white h4 text-decoration-none fw-lighter"
           >pixelDev</a
@@ -69,16 +71,18 @@
           </li>
         </ul>
         <a href="#" class="text-decoration-none lang">EN</a>
+        <button type="button" class="menu-toggle">
+          <i class="bi bi-list fs-2"></i>
+        </button>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section
-      class="position-relative d-flex flex-column justify-content-center align-items-center"
-      style="min-height: 45vh"
+      class="d-flex flex-column justify-content-center align-items-center position-relative"
     >
       <div class="container position-relative m-5 p-5" style="z-index: 2">
-        <div style="display: flex; flex-direction: row">
+        <div class="hero">
           <div class="col-7 lh-1">
             <!-- Pre-title with line -->
             <div class="d-flex align-items-center mb-3">
@@ -94,81 +98,12 @@
             </div>
 
             <!-- Main title -->
-            <h1 class="mb-4 hero-title">
-              Vamos criar algo juntos
-
-              <!-- Small Orange Gradient -->
-              <img
-                src="../images/Ellipse 1.png"
-                alt="Large Pink Gradient"
-                class="position-absolute"
-                style="
-                  top: 40px;
-                  right: 750px;
-                  width: 350px;
-                  height: 650px;
-                  rotate: 158deg;
-                  pointer-events: none;
-                "
-              />
-              <!-- Vector 6 -->
-              <img
-                src="../images/Vector 6.png"
-                alt="Arrow with gradient"
-                class="position-absolute"
-                style="
-                  top: 300px;
-                  right: 750px;
-                  width: 250px;
-                  height: 350px;
-                  pointer-events: none;
-                "
-              />
-
-              <!-- Star 1 -->
-              <img
-                src="../images/Star 1.png"
-                alt="White Star"
-                class="position-absolute star"
-                style="
-                  top: 320px;
-                  left: 110px;
-                  right: 750px;
-                  pointer-events: none;
-                "
-              />
-            </h1>
+            <h1 class="mb-4 hero-title">Vamos criar algo juntos</h1>
           </div>
 
-          <div class="col-5 mt-5 pt-5">
+          <div class="hero-text col-5 mt-5 pt-5">
             <!-- paragraph -->
             <div class="d-flex align-items-center mb-3">
-              <!-- Large Pink Gradient -->
-              <img
-                src="../images/Ellipse 4.png"
-                alt="Large Pink Gradient"
-                class="position-absolute"
-                style="
-                  right: -100px;
-                  width: 800px;
-                  height: auto;
-                  rotate: 158deg;
-                  pointer-events: none;
-                "
-              />
-              <!-- Star 2 -->
-              <img
-                src="../images/Star 1.png"
-                alt="White Star"
-                class="position-absolute star"
-                style="
-                  top: 100px;
-                  left: 850px;
-                  right: 750px;
-                  pointer-events: none;
-                "
-              />
-
               <div
                 style="
                   flex: 0 0 40px;
@@ -187,41 +122,43 @@
     </section>
 
     <!-- services + stars -->
-    <hr class="solid" />
-    <div class="d-flex justify-content-center align-items-center line-sec">
-      <img
-        src="../images/Star 1.png"
-        width="16"
-        height="16"
-        alt="star"
-        class="star"
-      />
-      <span>Website</span>
-      <img
-        src="../images/Star 1.png"
-        width="16"
-        height="16"
-        alt="star"
-        class="star"
-      />
-      <span>Design</span>
-      <img
-        src="../images/Star 1.png"
-        width="16"
-        height="16"
-        alt="star"
-        class="star"
-      />
-      <span>Software</span>
-      <img
-        src="../images/Star 1.png"
-        width="16"
-        height="16"
-        alt="star"
-        class="star"
-      />
+    <div class="services">
+      <hr class="solid" />
+      <div class="d-flex justify-content-center align-items-center line-sec">
+        <img
+          src="../images/Star 1.png"
+          width="2vw"
+          height="2vw"
+          alt="star"
+          class="star"
+        />
+        <span>Website</span>
+        <img
+          src="../images/Star 1.png"
+          width="2vw"
+          height="2vw"
+          alt="star"
+          class="star"
+        />
+        <span>Design</span>
+        <img
+          src="../images/Star 1.png"
+          width="2vw"
+          height="2vw"
+          alt="star"
+          class="star"
+        />
+        <span>Software</span>
+        <img
+          src="../images/Star 1.png"
+          width="2vw"
+          height="2vw"
+          alt="star"
+          class="star"
+        />
+      </div>
+      <hr class="solid" />
     </div>
-    <hr class="solid" />
 
     <!-- Contact Box -->
     <section class="mx-5 p-5">
