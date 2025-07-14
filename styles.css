@@ -98,6 +98,25 @@ header .menu-toggle {
   margin: 20px auto !important;
 }
 
+.btn-quote {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+
+  /* gradient background */
+  background: linear-gradient(90deg, var(--pink) 0%, var(--orange) 100%);
+  color: #000; /* black text for contrast */
+
+  transition: opacity 0.2s ease-in-out;
+}
+.btn-quote:hover {
+  opacity: 0.9;
+}
+
 /* ------------------- HERO ------------------- */
 .hero-title {
   font-family: "Vollkorn", serif;
@@ -507,14 +526,91 @@ hr.solid {
 }
 
 /* ──────────────────────────────────────────── */
-/*          Large desktops (<1200px)            */
+/*          Large desktops (<2000px)            */
 /* ──────────────────────────────────────────── */
-@media (min-width: 2300px) {
-  body {
-    background: url("../images/Star 1.png") no-repeat top 5% right 15% / 2vw 2vw,
-      url("../images/Vector 6.png") no-repeat top 8% right 95% / 10vw auto,
-      url("../images/Ellipse 4.png") no-repeat top -8% left 85% / 55vw auto,
-      url("../images/Ellipse 1.png") no-repeat top 10% right 85% / 35vw auto;
+@media (max-width: 2000px) {
+  .homepage {
+    background: url("../images/Star 1.png") no-repeat top 5% right 20% / 1.5vw
+        1.5vw,
+      url("../images/Vector 6.png") no-repeat top 9% right 98% / 20vw auto,
+      url("../images/Ellipse 4.png") no-repeat top -4% left 90% / 60vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 28% right 110% / 50vw auto,
+      url("../images/Ellipse 2.png") no-repeat top 70% right 100% / 50vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 60% right 0% / 50vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 90% right 60% / 50vw auto,
+      url("../images/Vector 8.png") no-repeat top 28% right 11% / 10vw auto,
+      url("../images/Vector 5.png") no-repeat top 48% right 95% / 11vw auto,
+      url("../images/Vector 2.png") no-repeat top 60% right 5% / 25vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 7% right 90% / 40vw auto;
+  }
+
+  .sobrepage {
+    background: url("../images/Star 1.png") no-repeat top 5% right 20% / 2vw,
+      url("../images/Vector 6.png") no-repeat top 15% right 97% / 20vw auto,
+      url("../images/Ellipse 4.png") no-repeat top -4% left 90% / 60vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 37% right 110% / 50vw auto,
+      url("../images/Ellipse 2.png") no-repeat top 70% right 100% / 50vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 60% right 0% / 50vw auto,
+      url("../images/Vector 1.png") no-repeat top 60% right 2% / 20vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 15% right 95% / 40vw auto;
+  }
+
+  .contactpage {
+    background: url("../images/Vector 6.png") no-repeat top 42% right 98% / 20vw
+        auto,
+      url("../images/Ellipse 4.png") no-repeat top 5% left 90% / 60vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 70% right 100% / 50vw auto;
+  }
+
+  .projectspage {
+    background: url("../images/Vector 6.png") no-repeat top 25% right 98% / 20vw
+        auto,
+      url("../images/Ellipse 4.png") no-repeat top -10% left 90% / 60vw auto;
+  }
+}
+
+/* ──────────────────────────────────────────── */
+/*          Medium Desktops (<1600px)            */
+/* ──────────────────────────────────────────── */
+@media (max-width: 1600px) {
+  .homepage {
+    background: url("../images/Star 1.png") no-repeat top 5% right 20% / 1.5vw
+        1.5vw,
+      url("../images/Vector 6.png") no-repeat top 9% right 97% / 20vw auto,
+      url("../images/Ellipse 4.png") no-repeat top -4% left 90% / 60vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 28% right 110% / 50vw auto,
+      url("../images/Ellipse 2.png") no-repeat top 70% right 100% / 50vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 60% right 0% / 50vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 90% right 60% / 50vw auto,
+      url("../images/Vector 8.png") no-repeat top 28% right 11% / 10vw auto,
+      url("../images/Vector 5.png") no-repeat top 48% right 95% / 11vw auto,
+      url("../images/Vector 2.png") no-repeat top 60% right 5% / 25vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 7% right 90% / 40vw auto;
+  }
+
+  .sobrepage {
+    background: url("../images/Star 1.png") no-repeat top 5% right 20% / 2vw,
+      url("../images/Vector 6.png") no-repeat top 12% right 97% / 20vw auto,
+      url("../images/Ellipse 4.png") no-repeat top -4% left 90% / 60vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 37% right 110% / 50vw auto,
+      url("../images/Ellipse 2.png") no-repeat top 70% right 100% / 50vw auto,
+      url("../images/Ellipse 3.png") no-repeat top 60% right 0% / 50vw auto,
+      url("../images/Vector 3.png") no-repeat top 32% right 2% / 15vw auto,
+      url("../images/Vector 1.png") no-repeat top 60% right 2% / 20vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 15% right 95% / 40vw auto;
+  }
+
+  .contactpage {
+    background: url("../images/Vector 6.png") no-repeat top 40% right 95% / 20vw
+        auto,
+      url("../images/Ellipse 4.png") no-repeat top 5% left 90% / 60vw auto,
+      url("../images/Ellipse 1.png") no-repeat top 70% right 100% / 50vw auto;
+  }
+
+  .projectspage {
+    background: url("../images/Vector 6.png") no-repeat top 25% right 96% / 20vw
+        auto,
+      url("../images/Ellipse 4.png") no-repeat top -10% left 90% / 60vw auto;
   }
 }
 
@@ -710,5 +806,9 @@ hr.solid {
     margin-right: 1rem;
     margin-left: 1rem;
     padding: 0;
+  }
+
+  .btn-quote {
+    display: none;
   }
 }
