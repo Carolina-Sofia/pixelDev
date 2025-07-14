@@ -164,8 +164,9 @@
       <hr class="solid" />
     </div>
 
+
     <!-- Contact Box -->
-    <section class="mx-5 p-5" id="contact-form-section">
+    <section class="contact">
       <p
         class="lead mx-4"
         style="
@@ -192,8 +193,19 @@
         orçamento gratuito e sem compromisso.</p>
       </p>
 
-      <div class="contact-section mt-5">
-        <form class="contact-form" style="max-width: 600px">
+      <div class="contact-section mt-5 mx-5 p-5">
+        <form
+          id="contactForm"
+          class="contact-form"
+          style="max-width: 600px"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="ce722925-204c-41cb-88e8-d1460cb99d74"
+          />
           <div class="mb-4">
             <label for="name" class="form-label">Nome</label>
             <input
@@ -201,6 +213,8 @@
               id="name"
               class="form-control custom-input"
               placeholder="Name"
+              name="name"
+              required
             />
           </div>
           <div class="mb-4">
@@ -210,6 +224,8 @@
               id="email"
               class="form-control custom-input"
               placeholder="Email"
+              name="email"
+              required
             />
           </div>
           <div class="mb-4">
@@ -219,14 +235,23 @@
               rows="6"
               class="form-control custom-textarea"
               placeholder="Mensagem"
+              name="message"
+              required
             ></textarea>
+            <!-- Honeypot Spam Protection -->
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
           </div>
           <button type="submit" class="custom-btn">
             Envie-nos uma mensagem
           </button>
         </form>
 
-        <!-- Vector 7 -->
+        <!-- Vector 6 -->
         <img
           src="../images/Vector 7.png"
           alt="Arrow with gradient"
