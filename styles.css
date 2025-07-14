@@ -200,6 +200,11 @@ hr.solid {
   margin: 0;
 }
 
+.contact-title {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 /* ------------------- Projetos ------------------- */
 .project-card {
   display: flex;
@@ -810,5 +815,10 @@ hr.solid {
 
   .btn-quote {
     display: none;
+  }
+
+  .contact {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
