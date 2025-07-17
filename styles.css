@@ -117,6 +117,17 @@ header .menu-toggle {
   opacity: 0.9;
 }
 
+.brand-logo .logo {
+  height: 1.9rem;
+  width: auto;
+  display: block;
+}
+
+.brand-logo {
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
 /* ------------------- HERO ------------------- */
 .hero-title {
   font-family: "Vollkorn", serif;
