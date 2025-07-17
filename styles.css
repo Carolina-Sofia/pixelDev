@@ -257,6 +257,7 @@ hr.solid {
   line-height: 1.4;
   color: #ccc;
   font-family: "Manrope", sans-serif;
+  text-align: justify;
 }
 
 /* ------------------- Testimonials ------------------- */
@@ -516,6 +517,7 @@ hr.solid {
   font-size: 0.9rem;
   line-height: 1.4;
   color: var(--grey);
+  text-align: justify;
 }
 
 .team-cards .card {
