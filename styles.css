@@ -445,6 +445,7 @@ hr.solid {
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .custom-accordion .accordion-button.collapsed {
@@ -820,5 +821,28 @@ hr.solid {
   .contact {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 100% !important;
+    height: 170px !important;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    width: 100%; /* take full width */
+  }
+
+  .card-text {
+    position: static; /* remove absolute positioning */
+    transform: none;
+    width: 100%; /* full width under the title */
+    margin-top: 0.5rem;
+    text-align: justify;
   }
 }
